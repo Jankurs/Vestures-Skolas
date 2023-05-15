@@ -1,0 +1,289 @@
+<html>
+
+<head>
+    <title>Vēstures Skolas</title>
+    <script language="javascript">
+        function SelectRedirect() {
+            // ON selection of section this function will work
+            //alert( document.getElementById('s1').value);
+
+            switch (document.getElementById('s1').value) {
+                case "harv":
+                    window.location = "https://www.harvard.edu";
+                    break;
+
+                case "nyu":
+                    window.location = "https://www.nyu.edu/";
+                    break;
+
+                case "cali":
+                    window.location = ".https://www.universityofcalifornia.edu/";
+                    break;
+                case "nebra":
+                    window.location = "https://www.unl.edu/";
+                    break;
+
+                case "arizon":
+                    window.location = "https://www.asu.edu/";
+                    break; 
+
+                case "mx1":
+                    window.location = "https://www.unam.mx";
+                    break;
+
+                case "mx2":
+                    window.location = "https://www.ipn.mx/";
+                    break;
+
+                case "mx3":
+                    window.location = "https://www.uam.mx";
+                    break;
+
+                case "cn1":
+                    window.location = "https://www.ubc.ca/";
+                    break;
+
+                case "cn2":
+                    window.location = "https://www.utoronto.ca";
+                    break;
+
+                case "cn3":
+                    window.location = "https://www.mcgill.ca";
+                    break;
+
+
+
+    } switch (document.getElementById('s2').value) {
+
+
+
+                case "lv":
+                    window.location = "https://www.lu.lv/studijas/fakultates/vestures-un-filozofijas-fakultate/bakalaura-limena-studijas/vesture/";
+                    break;
+
+                case "pt":
+                    window.location = "https://www.ulisboa.pt/";
+                    break;
+
+                case "gr":
+                    window.location = "https://www.uoa.gr";
+                    break;
+
+                case "pl":
+                    window.location = "https://www.uw.edu.pl/";
+                    break;
+
+                case "cz":
+                    window.location = "https://cuni.cz/UK-103.html";
+                    break;
+
+                case "zv":
+                    window.location = "https://www.su.se";
+                    break;
+
+                case "fra":
+                    window.location = "https://www.ens.psl.eu";
+                    break;
+
+                case "ger1":
+                    window.location = "https://www.fu-berlin.de";
+                    break;
+
+                case "ger2":
+                    window.location = "https://uni-freiburg.de";
+                    break;
+
+                case "ang1":
+                    window.location = "https://www.ox.ac.uk";
+                    break;
+
+                case "ang2":
+                    window.location = "https://www.cam.ac.uk";
+                    break;
+
+                case "ang3":
+                    window.location = "https://www.manchester.ac.uk";
+                    break;
+
+                case "ang4":
+                    window.location = "https://www.ucl.ac.uk";
+                    break;
+
+                case "šv":
+                    window.location = "https://uzh.ch/de.html";
+                    break;
+
+                case "som":
+                    window.location = "https://www.helsinki.fi";
+                    break;
+
+                case "beļ":
+                    window.location = "https://www.uliege.be/cms/c_8699436/en/uliege";
+                    break;
+
+                case "nīd":
+                    window.location = "https://www.uva.nl";
+                    break;
+                    
+
+
+    } switch (document.getElementById('s3').value) {
+
+
+
+                case "aus1":
+                    window.location = "https://www.sydney.edu.au";
+                    break;
+
+                case "aus2":
+                    window.location = "https://www.unimelb.edu.au";
+                    break;
+
+                case "aus3":
+                    window.location = "https://www.monash.edu";
+                    break;
+
+                case "aus4":
+                    window.location = "https://www.unsw.edu.au";
+                    break;
+
+                case "aus5":
+                    window.location = "https://www.anu.edu.au";
+                    break;
+
+                case "jz1":
+                    window.location = "https://www.auckland.ac.nz/en.html";
+                    break;
+
+                case "jz2":
+                    window.location = "https://www.otago.ac.nz";
+                    break;
+
+                case "jz3":
+                    window.location = "https://www.wgtn.ac.nz";
+                    break;
+
+                case "jz4":
+                    window.location = "https://www.massey.ac.nz";
+                    break;
+                    
+            }
+        }
+ 
+    </script>
+
+    <style>
+        .column {
+            border: 3px solid #ffffff;
+            border-radius: 15px;
+            background-color: #ffffff;
+            flex: 100%;
+            height: 550px;
+            margin: 70px;
+            background-color: #cccccc;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        a{
+            border: 0 solid black;
+            padding: 4px;
+            background-color: #fff;
+            border-radius: 2rem;
+            margin-top: 400px;
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <H1>Vēstures Skolas Ārzemēs</H1>
+
+    <div class="container">
+        <div class="column">
+            <h2> Ziemeļamerika </h2>
+            <p>
+            <form action="/action_page.php">
+                <label for="s1">Izvēlies skolu</label>
+                <SELECT id="s1" NAME="section1" onChange="SelectRedirect();">
+                    <Option value="">Izvēlies Universitāti!</option>
+                    <Option value="harv">Hārvarda Uni.</option>
+                    <Option value="nyu">Ņujorkas Uni.</option>
+                    <Option value="cali">Kalifornijas Uni.</option>
+                    <Option value="nebra">Nebraskas Uni.</option>
+                    <Option value="arizon">Arizonas Štata Uni.</option>
+                    <Option value="cn1">Britu Kolumbijas Uni.</option>
+                    <Option value="cn2">Toronto Uni.</option>
+                    <Option value="cn3">Makgila Uni.</option>
+                    <Option value="mx1">Meksikas Nacionālā Uni.</option>
+                    <Option value="mx2">Nacionālais Politehniskais institūts</option>
+                    <Option value="mx3">Metropolitēna autonomā Uni.</option>
+                    
+                </SELECT>
+                </p>
+                <a href="https://www.niche.com/colleges/search/best-colleges-for-history/">more info</a>
+        </div>
+
+
+        <div class="column">
+            <h2> Eiropa </h2>
+            <p>
+            <form action="/action_page.php">
+                <label for="s2">Izvēlies skolu</label>
+                <SELECT id="s2" NAME="section1" onChange="SelectRedirect();">
+                    <Option value="">Izvēlies Universitāti!</option>
+                    <Option value="lv">Latvijas Uni.</option>
+                    <Option value="pt">Portugāles Uni.</option>
+                    <Option value="gr">Grieķijas Uni.</option>
+                    <Option value="pl">Polijas Uni.</option>
+                    <Option value="cz">Čehijas Uni.</option>
+                    <Option value="zv">Zviedrijas Uni.</option>
+                    <Option value="fra">Francijas Uni.</option>
+                    <Option value="ger1">Berlīnes Uni.</option>
+                    <Option value="ger2">Freiburgas Uni.</option>
+                    <Option value="ang1">Oksforads Uni.</option>
+                    <Option value="ang2">Kambridžas Uni.</option>
+                    <Option value="ang3">Mančesteras Uni.</option>
+                    <Option value="ang4">Londonas Globālā Uni.</option>
+                    <Option value="šv">Šveices Uni.</option>
+                    <Option value="som">Somijas Uni.</option>
+                    <Option value="beļ">Beļģijas Uni.</option>
+                    <Option value="nīd">Nīderlandes Uni.</option>
+                </SELECT>
+                </p>
+                <a href="https://edurank.org/liberal-arts/history/eu/">more info</a>
+        </div>
+
+
+        <div class="column">
+            <h2> Austrālija </h2>
+            <p>
+            <form action="/action_page.php">
+                <label for="s3">Izvēlies skolu</label>
+                <SELECT id="s3" NAME="section" onChange="SelectRedirect();">
+                    <Option value="">Izvēlies Universitāti</option>
+                    <Option value="aus1">Sidnejas Uni.</option>
+                    <Option value="aus2">Melburnas Uni.</option>
+                    <Option value="aus3">Monašas Uni.</option>
+                    <Option value="aus4">UNSW Sidnejas Uni.</option>
+                    <Option value="aus5">Austrālijas Nacionālā Uni.</option>
+                    <Option value="jz1">Oklendas Uni.</option>
+                    <Option value="jz2">Otago Uni.</option>
+                    <Option value="jz3">Velingtonas Viktorijas Uni.</option>
+                    <Option value="jz4">Masijas Uni.</option>
+                </SELECT>
+                </p>
+                <a href="https://erudera.com/study-programs/history/australia/">more info</a>
+        </div>
+
+</body>
+
+</html>
